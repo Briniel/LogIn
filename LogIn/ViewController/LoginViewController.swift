@@ -8,6 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet var userTF: UITextField!
     @IBOutlet var passTF: UITextField!
     
@@ -20,7 +21,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func clickLogIn() {
-        guard userTF.text == "Lieberman", passTF.text == "Rosenrot" else {
+        guard userTF.text == "Till", passTF.text == "Rosenrot" else {
             createAlert(title: "WARNING",
                         message: "You made a mistake in your username or password")
             passTF.text = ""
@@ -44,7 +45,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func clickForgotUser() {
         createAlert(title: "You forgot your username?",
-                    message: "Don't worry, your username is Lieberman")
+                    message: "Don't worry, your username is Till")
     }
     
     @IBAction func clickForgotPass() {
@@ -53,13 +54,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let textTag = textField.tag + 1
-        if let nextResponder = textField.superview?.viewWithTag(textTag) {
-            nextResponder.becomeFirstResponder()
-        }
-        else {
-            self.view.endEditing(true)
-            clickLogIn()
+        let elementID = textField.restorationIdentifier
+        switch elementID {
+            case "user":
+                passTF.becomeFirstResponder()
+            default:
+                self.view.endEditing(true)
+                clickLogIn()
         }
         return true
     }
