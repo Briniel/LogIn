@@ -14,6 +14,10 @@
 		3E6CB57826D4329E00B3C616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6CB57626D4329E00B3C616 /* LaunchScreen.storyboard */; };
 		3E94D54E26D4D0D700C7CBF5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E94D54D26D4D0D700C7CBF5 /* WelcomeViewController.swift */; };
 		3E94D55126D4D54C00C7CBF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E94D55026D4D54C00C7CBF5 /* LoginViewController.swift */; };
+		3E9729B726D8F0E200E16C6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9729B626D8F0E200E16C6D /* User.swift */; };
+		3E9729BA26D8F14900E16C6D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9729B926D8F14900E16C6D /* Person.swift */; };
+		3E9729BD26D91D6700E16C6D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9729BC26D91D6700E16C6D /* InfoViewController.swift */; };
+		3E9729C026D920A600E16C6D /* InfoWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9729BF26D920A500E16C6D /* InfoWorkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		3E6CB57926D4329E00B3C616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E94D54D26D4D0D700C7CBF5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3E94D55026D4D54C00C7CBF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3E9729B626D8F0E200E16C6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3E9729B926D8F14900E16C6D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3E9729BC26D91D6700E16C6D /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3E9729BF26D920A500E16C6D /* InfoWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWorkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,24 +66,60 @@
 		3E6CB56A26D4329300B3C616 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
-				3E94D54B26D4CB0600C7CBF5 /* ViewController */,
-				3E6CB56B26D4329300B3C616 /* AppDelegate.swift */,
-				3E6CB56D26D4329300B3C616 /* SceneDelegate.swift */,
-				3E6CB57126D4329300B3C616 /* Main.storyboard */,
-				3E6CB57426D4329E00B3C616 /* Assets.xcassets */,
-				3E6CB57626D4329E00B3C616 /* LaunchScreen.storyboard */,
-				3E6CB57926D4329E00B3C616 /* Info.plist */,
+				3E94D54B26D4CB0600C7CBF5 /* ViewControllers */,
+				3E9729B526D8F0C600E16C6D /* Models */,
+				3E9729B026D8C35500E16C6D /* App */,
+				3E9729B226D8C3A200E16C6D /* Storyboards */,
+				3E9729B326D8C3B900E16C6D /* Resorces */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
 		};
-		3E94D54B26D4CB0600C7CBF5 /* ViewController */ = {
+		3E94D54B26D4CB0600C7CBF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				3E94D54D26D4D0D700C7CBF5 /* WelcomeViewController.swift */,
 				3E94D55026D4D54C00C7CBF5 /* LoginViewController.swift */,
+				3E9729BC26D91D6700E16C6D /* InfoViewController.swift */,
+				3E9729BF26D920A500E16C6D /* InfoWorkViewController.swift */,
 			);
-			path = ViewController;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3E9729B026D8C35500E16C6D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3E6CB56B26D4329300B3C616 /* AppDelegate.swift */,
+				3E6CB56D26D4329300B3C616 /* SceneDelegate.swift */,
+				3E6CB57926D4329E00B3C616 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3E9729B226D8C3A200E16C6D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3E6CB57126D4329300B3C616 /* Main.storyboard */,
+				3E6CB57626D4329E00B3C616 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3E9729B326D8C3B900E16C6D /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				3E6CB57426D4329E00B3C616 /* Assets.xcassets */,
+			);
+			path = Resorces;
+			sourceTree = "<group>";
+		};
+		3E9729B526D8F0C600E16C6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E9729B626D8F0E200E16C6D /* User.swift */,
+				3E9729B926D8F14900E16C6D /* Person.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E9729BA26D8F14900E16C6D /* Person.swift in Sources */,
 				3E94D55126D4D54C00C7CBF5 /* LoginViewController.swift in Sources */,
 				3E94D54E26D4D0D700C7CBF5 /* WelcomeViewController.swift in Sources */,
+				3E9729BD26D91D6700E16C6D /* InfoViewController.swift in Sources */,
 				3E6CB56C26D4329300B3C616 /* AppDelegate.swift in Sources */,
+				3E9729C026D920A600E16C6D /* InfoWorkViewController.swift in Sources */,
+				3E9729B726D8F0E200E16C6D /* User.swift in Sources */,
 				3E6CB56E26D4329300B3C616 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A988NJMD75;
-				INFOPLIST_FILE = LogIn/Info.plist;
+				INFOPLIST_FILE = LogIn/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A988NJMD75;
-				INFOPLIST_FILE = LogIn/Info.plist;
+				INFOPLIST_FILE = LogIn/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
